@@ -6,19 +6,6 @@ import Agents from "@/components/ui/home/Agents";
 import Footer from "@/components/common/Footer";
 
 
-async function getListings() {
-  const res = await fetch('https://replication.sparkapi.com/v1/listings?_limit=20', {
-    headers: {
-      'Authorization': 'Bearer YOUR_API_KEY_HERE',  // or whatever auth method your key uses
-      'Content-Type': 'application/json',
-    },
-  });
-  return res.json();
-}
-
-// Then in your page:
-const listings = await getListings();
-
 
 
 
