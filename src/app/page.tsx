@@ -5,7 +5,18 @@ import Reviews from "@/components/ui/home/Reviews";
 import Agents from "@/components/ui/home/Agents";
 import Footer from "@/components/common/Footer";
 
+import { getProperties } from '@/data/properties';
 
+export default async function Home() {
+  const properties = await getProperties(12);   // Get 12 newest listings
+
+  return (
+    // Your existing JSX...
+    {properties.map(property => (
+      // Your property card component
+    ))}
+  );
+}
 
 
 
