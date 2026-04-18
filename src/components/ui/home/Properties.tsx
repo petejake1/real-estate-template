@@ -60,6 +60,14 @@ const PropertyCard: React.FC<{ property: Property }> = ({ property }) => (
   </div>
 );
 
+
+export default function Properties({ properties = [] }) {
+
+
+
+
+
+
 export default function RealEstateShowcase() {
   const prevRef = useRef<HTMLButtonElement | null>(null);
   const nextRef = useRef<HTMLButtonElement | null>(null);
