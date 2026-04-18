@@ -9,6 +9,12 @@ import { Navigation, Autoplay } from "swiper/modules";
 import { FaBed, FaBath, FaRegSquare } from "react-icons/fa";
 import Link from "next/link";
 import Image from "next/image";
+import { useRef } from 'react';   // Keep any existing imports
+
+// ← Add this
+export default function RealEstateShowcase({ properties = [] }) {
+  const prevRef = useRef<HTMLButtonElement | null>(null);
+  const nextRef = useRef<HTMLButtonElement | null>(null);
 
 interface Property {
   id: number;
