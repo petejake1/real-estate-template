@@ -8,12 +8,12 @@ import Footer from "@/components/common/Footer";
 import { getProperties } from '@/data/properties';
 
 export default async function Home() {
-  const properties = await getProperties(12);   // Live from Spark
+  const properties = await getProperties(12);   // Live Spark data - 12 newest listings
 
   return (
     <>
       <Header />
-      <Properties properties={properties} />   {/* Pass data here */}
+      <Properties properties={properties} />
       <Agents />
       <Choose_us />
       <Reviews />
